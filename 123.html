@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>fingerprintjs</title>
+  <style type="text/css">
+    body{
+      font-family: 'Sans'
+    }
+  </style>
+
+  <script src="dev-finger.js"></script>
+  <script src="md5.js"></script>
+</head>
+<body>
+  <div style="text-align: center;">
+    <h3 style="margin-top: 60px">Your browser fingerprint with default settings (canvas, screen resolutin, activeX disabled)</h3>
+    <h1 id="fp1"></h1>
+  </div>
+  <div style="text-align: center;">
+    <h3 style="margin-top: 20px">Your browser fingerprint with canvas enabled is:</h3>
+    <h1 id="fp2"></h1>
+  </div>
+  <div style="text-align: center;">
+      <h3 style="margin-top: 20px">Your browser fingerprint with ie_activex enabled is:</h3>
+      <h1 id="fp3"></h1>
+  </div>
+  <div style="text-align: center;">
+    <h3 style="margin-top: 20px">Your browser fingerprint with screen_resolution enabled is:</h3>
+    <h1 id="fp4"></h1>
+  </div>
+  <script>
+	var result = getfingerresult();
+	alert(result);
+	
+	var md5 = getfingermd5();
+	alert(md5);
+	
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
